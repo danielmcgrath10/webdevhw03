@@ -10,4 +10,9 @@
 #game-container {
   margin: auto;
   width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
 }
+

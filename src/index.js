@@ -5,6 +5,7 @@ import $ from 'jquery';
 import Popper from 'popper.js';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'react-notifications/lib/notifications.css';
 
 ReactDOM.render(
   <React.StrictMode>
