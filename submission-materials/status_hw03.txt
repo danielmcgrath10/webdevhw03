@@ -1,0 +1,34 @@
+Please fill in answers to the questions below:
+
+
+1. What's your name?
+
+Daniel McGrath
+
+2. What hostname did you deploy to?
+
+hw03.danny-mcgrath.com
+
+3. Which parts of this assignment did you have trouble with, if any?
+
+I didn't really have that much trouble with this assignment. The only 
+area of difficulty was in validating the rules of the game.
+
+4. What external libraries did you use? For what?
+
+- lodash: I used this library for shuffling the array to generate the 
+random number, checking to see if the input number is valid, and 
+checking to see if the input number is the same as the random number
+- react-bootstrap: I used this for the component library/page layout
+- react-notifications: I used this library for notifying the user of 
+unwanted action/when to reset the game
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Task 1
+ - Task 2
+ - Task 3
+ - Task 4
+ - Task 5
+ - Task 6
+ - Task 7
+ - Task 8
