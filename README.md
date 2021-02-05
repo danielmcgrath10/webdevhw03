@@ -5,3 +5,5 @@
 ```
 yarn && yarn start
 ```
+This runs the "yarn" command which downloads all of the packages you need, 
+and then calls the "yarn start" command which starts the developmnet server and serves the app.
