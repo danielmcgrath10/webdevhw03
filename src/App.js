@@ -120,7 +120,7 @@ function App() {
   return (
     <div className="App">
       <Container id={"game-container"} fluid>
-        <Row>
+        <Row id={"display-row"}>
           <Col>Result: {bullCow}</Col>
           <Col>
             <Table striped bordered size="sm">
@@ -133,8 +133,8 @@ function App() {
             </Table>
           </Col>
         </Row>
-        <Row>
-          <InputGroup className={"mb-3"}>
+        <Row id={"input-row"}>
+          <InputGroup className={"mb-2"}>
             <FormControl
               type={"number"}
               onKeyPress={handleKeyPress}
