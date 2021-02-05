@@ -56,7 +56,6 @@ function App() {
 
   const isValid = () => {
     for (let i = 0; i < curInput.length; i++) {
-      console.log(curInput, curInput[i]);
       if (_.includes(curInput, curInput[i], i + 1)) {
         return false;
       }
@@ -67,17 +66,14 @@ function App() {
   const checkCowBull = () => {
     let bulls = 0;
     let cows = 0;
-    console.log(curInput, targetNum);
     for (let i = 0; i < curInput.length; i++) {
       let curLetter = curInput[i];
-      console.log(curLetter);
       if (curLetter === targetNum[i]) {
         bulls++;
       } else if (_.includes(targetNum, curLetter)) {
         cows++;
       }
     }
-    console.log(bulls, cows);
     numGuesses === 1
       ? setBullCow("Out of Guesses")
       : setBullCow(`${bulls} bulls and ${cows} cows`);
@@ -102,7 +98,6 @@ function App() {
         setBullCow("You WIN!!!!!!!!");
         setNumGuesses(0);
       }
-      console.log(guesses);
       setCurInput("");
     } else {
       NotificationManager.error("Game is Over, Need to Reset");
