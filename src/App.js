@@ -27,6 +27,7 @@ function App() {
     }
   });
 
+  // Received some inspiration on how to get unique digits for this from Stack Overflow
   const setNewNum = () => {
     let arr = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
     arr = _.shuffle(arr).slice(0, 4).join("");
@@ -54,6 +55,8 @@ function App() {
     }
   };
 
+  // Received some inspiration for this from Stack Overflow
+  // and the documentation for lodash functions
   const isValid = () => {
     for (let i = 0; i < curInput.length; i++) {
       if (_.includes(curInput, curInput[i], i + 1)) {
