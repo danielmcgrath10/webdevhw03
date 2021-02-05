@@ -8,9 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import 'react-notifications/lib/notifications.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <App />,
   document.getElementById('root')
 );
 

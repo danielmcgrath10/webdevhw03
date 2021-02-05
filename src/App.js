@@ -31,16 +31,6 @@ function App() {
     setNumGuesses(8);
   }
 
-  const isValid = () => {
-    for(let i = 0; i < curInput.length; i++){
-      console.log(curInput, curInput[i]);
-      if(_.includes(curInput, curInput[i], i + 1)){
-        return false;
-      }
-    }
-    return true;
-  }
-
   const handleInput = (e) => {
     let input = e.target.value;
     if(input !== curInput && input <= 9999){
@@ -52,6 +42,16 @@ function App() {
     if(e.key === "Enter"){
       checkWin(e);
     }
+  }
+
+  const isValid = () => {
+    for(let i = 0; i < curInput.length; i++){
+      console.log(curInput, curInput[i]);
+      if(_.includes(curInput, curInput[i], i + 1)){
+        return false;
+      }
+    }
+    return true;
   }
 
   const checkCowBull = () => {
@@ -68,7 +68,7 @@ function App() {
       }
     }
     console.log(bulls, cows);
-    setBullCow(`${bulls} bulls and ${cows} cows`);
+    numGuesses === 1 ? setBullCow("Out of Guesses") : setBullCow(`${bulls} bulls and ${cows} cows`);
   }
 
   const checkWin = () => {
